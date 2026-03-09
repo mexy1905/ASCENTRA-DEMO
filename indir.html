@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosyalar | ASCENTRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card: #151515;
+            --yellow: #ffcc00;
+            --blue: #0055ff;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid var(--yellow);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: var(--blue); }
+        .active { color: var(--yellow) !important; border-bottom: 2px solid var(--yellow); }
+
+        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
+        
+        h1 { color: var(--yellow); text-align: center; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px; }
+        .sub-title { text-align: center; color: #888; margin-bottom: 40px; font-size: 0.9rem; }
+
+        /* LİSTE BUTONLAR */
+        .download-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .download-item {
+            background: var(--card);
+            border-left: 5px solid var(--blue);
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .download-item:hover {
+            transform: translateX(15px);
+            border-left: 5px solid var(--yellow);
+            background: #1e1e1e;
+        }
+
+        .info { display: flex; align-items: center; gap: 20px; }
+        .info i { font-size: 1.8rem; color: var(--yellow); }
+        .info-text b { display: block; font-size: 1.1rem; }
+        .info-text span { font-size: 0.8rem; color: #777; }
+
+        .dl-icon {
+            background: var(--blue);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .download-item:hover .dl-icon {
+            background: var(--yellow);
+            transform: rotate(360deg);
+        }
+
+        .dl-icon i { color: white; font-size: 1.2rem; }
+        .download-item:hover .dl-icon i { color: black; }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kadro.html">Kadro</a>
+    <a href="kurallar.html">Kurallar</a>
+    <a href="basarilar.html">Başarılar</a>
+    <a href="indir.html" class="active">Dosyalar</a>
+    <a href="basvuru.html">Başvuru</a>
+</nav>
+
+<div class="container">
+    <h1>Lonca Envanteri</h1>
+    <p class="sub-title">ASCENTRA üyelerine özel hazırlanan tüm kaynaklar buradadır.</p>
+
+    <div class="download-list">
+        
+        <a href="DRIVE_LINKINIZ" target="_blank" class="download-item">
+            <div class="info">
+                <i class="fas fa-archive"></i>
+                <div class="info-text">
+                    <b>ASCENTRA Resource Pack</b>
+                    <span>FPS Optimize & Özel Dokular</span>
+                </div>
+            </div>
+            <div class="dl-icon"><i class="fas fa-download"></i></div>
+        </a>
+
+        <a href="DRIVE_LINKINIZ" target="_blank" class="download-item">
+            <div class="info">
+                <i class="fas fa-cloud-sun"></i>
+                <div class="info-text">
+                    <b>Lonca Özel Shader</b>
+                    <span>Düşük Sistem Dostu (Low-End)</span>
+                </div>
+            </div>
+            <div class="dl-icon"><i class="fas fa-download"></i></div>
+        </a>
+
+        <a href="DRIVE_LINKINIZ" target="_blank" class="download-item">
+            <div class="info">
+                <i class="fas fa-tshirt"></i>
+                <div class="info-text">
+                    <b>Ascentra Pelerin</b>
+                    <span>Lonca Üyelerine Özel Tasarım</span>
+                </div>
+            </div>
+            <div class="dl-icon"><i class="fas fa-download"></i></div>
+        </a>
+
+        <a href="DRIVE_LINKINIZ" target="_blank" class="download-item">
+            <div class="info">
+                <i class="fas fa-user-circle"></i>
+                <div class="info-text">
+                    <b>Üye Skin Paketi</b>
+                    <span>Ortak Skin Arşivi</span>
+                </div>
+            </div>
+            <div class="dl-icon"><i class="fas fa-download"></i></div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

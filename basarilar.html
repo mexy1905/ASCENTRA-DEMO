@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başarılar | ASCENTRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card: #151515;
+            --yellow: #ffcc00;
+            --blue: #0055ff;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR (Sistemle uyumlu) */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid var(--yellow);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: var(--blue); }
+        .active { color: var(--yellow) !important; border-bottom: 2px solid var(--yellow); }
+
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        
+        h1 { color: var(--yellow); text-align: center; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
+
+        /* BAŞARI KARTLARI */
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .achievement-card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-card:hover {
+            border-color: var(--blue);
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 85, 255, 0.2);
+        }
+
+        .achievement-card i {
+            font-size: 3.5rem;
+            color: var(--yellow);
+            margin-bottom: 20px;
+            display: block;
+            filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.5));
+        }
+
+        .achievement-card h3 {
+            margin: 10px 0;
+            color: var(--blue);
+            text-transform: uppercase;
+        }
+
+        .achievement-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .counter-section {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 50px;
+            background: var(--blue);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .counter-box h2 { margin: 0; font-size: 2.5rem; }
+        .counter-box p { margin: 0; text-transform: uppercase; font-size: 0.8rem; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kadro.html">Kadro</a>
+    <a href="kurallar.html">Kurallar</a>
+    <a href="basarilar.html" class="active">Başarılar</a>
+    <a href="indir.html">Dosyalar</a>
+    <a href="basvuru.html">Başvuru</a>
+</nav>
+
+<div class="container">
+    <h1>Lonca Başarıları</h1>
+
+    <div class="counter-section">
+        <div class="counter-box">
+            <h2>50+</h2>
+            <p>CW Galibiyeti</p>
+        </div>
+        <div class="counter-box" style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 50px;">
+            <h2>#1</h2>
+            <p>Sıralama Hedefi</p>
+        </div>
+        <div class="counter-box" style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 50px;">
+            <h2>15</h2>
+            <p>Turnuva Kupası</p>
+        </div>
+    </div>
+
+    <div class="achievement-grid">
+        <div class="achievement-card">
+            <i class="fas fa-trophy"></i>
+            <h3>Turnuva Şampiyonu</h3>
+            <p>2026 Sezonu Craftrise Clan Turnuvası birinciliği.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class="fas fa-fire"></i>
+            <h3>Yenilmezlik Serisi</h3>
+            <p>Üst üste 15 klan savaşında mağlubiyet yüzü görmedik.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class="fas fa-medal"></i>
+            <h3>Elit Lonca</h3>
+            <p>Craftrise sunucusunda "En Aktif Lonca" ödülüne layık görüldük.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class="fas fa-crown"></i>
+            <h3>Domination</h3>
+            <p>Skywars ve Bedwars modlarında lonca bazlı puan rekoru.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

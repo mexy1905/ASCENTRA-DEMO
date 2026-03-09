@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru | ASCENTRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card: #151515;
+            --yellow: #ffcc00;
+            --blue: #0055ff;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid var(--yellow);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: var(--blue); }
+        .active { color: var(--yellow) !important; border-bottom: 2px solid var(--yellow); }
+
+        .container { max-width: 800px; margin: auto; padding: 40px 20px; text-align: center; }
+        
+        h1 { color: var(--yellow); text-transform: uppercase; letter-spacing: 3px; }
+        .info-text { color: #ccc; margin-bottom: 40px; }
+
+        /* BAŞVURU KARTI */
+        .apply-card {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #222;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .apply-btn {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            margin-top: 20px;
+            border: 2px solid transparent;
+        }
+
+        .apply-btn:hover {
+            background: transparent;
+            border-color: var(--yellow);
+            color: var(--yellow);
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+        }
+
+        /* GOOGLE FORM EMBED (OPSİYONEL) */
+        .form-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--blue);
+        }
+
+        .requirement-list {
+            text-align: left;
+            background: rgba(0, 85, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .requirement-list li { margin-bottom: 10px; color: #ddd; }
+        .requirement-list i { color: var(--yellow); margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kadro.html">Kadro</a>
+    <a href="kurallar.html">Kurallar</a>
+    <a href="basarilar.html">Başarılar</a>
+    <a href="indir.html">Dosyalar</a>
+    <a href="basvuru.html" class="active">Başvuru</a>
+</nav>
+
+<div class="container">
+    <h1>Aramıza Katıl</h1>
+    <p class="info-text">ASCENTRA ailesinin bir parçası olmak için aşağıdaki formu doldur.</p>
+
+    <div class="apply-card">
+        <div class="requirement-list">
+            <h3 style="color: var(--blue); margin-top: 0;">Başvuru Şartları:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li><i class="fas fa-check-circle"></i> En az 15 yaşında olmak.</li>
+                <li><i class="fas fa-check-circle"></i> Discord kullanmak ve mikrofon sahibi olmak.</li>
+                <li><i class="fas fa-check-circle"></i> Craftrise'da aktif bir geçmişe sahip olmak.</li>
+                <li><i class="fas fa-check-circle"></i> Lonca kurallarını tamamen kabul etmek.</li>
+            </ul>
+        </div>
+
+        <p>Hazırsan aşağıdaki butona tıklayarak başvuru formuna gidebilirsin:</p>
+        
+        <a href="GOOGLE_FORM_LINKINIZ" target="_blank" class="apply-btn">
+            <i class="fab fa-wpforms"></i> BAŞVURU FORMUNU AÇ
+        </a>
+
+        </div>
+</div>
+
+</body>
+</html>

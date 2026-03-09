@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurallar | ASCENTRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card: #151515;
+            --yellow: #ffcc00;
+            --blue: #0055ff;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR (Diğer sayfalarla uyumlu) */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid var(--yellow);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: var(--blue); }
+        .active { color: var(--yellow) !important; border-bottom: 2px solid var(--yellow); }
+
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        
+        h1 { color: var(--yellow); text-align: center; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
+
+        /* KURAL LİSTESİ */
+        .rule-item {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            border-left: 5px solid var(--blue);
+            transition: 0.3s;
+        }
+
+        .rule-item:hover {
+            transform: scale(1.02);
+            border-left: 5px solid var(--yellow);
+        }
+
+        .rule-number {
+            background: var(--blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .rule-text h3 { margin: 0; color: var(--yellow); font-size: 1.2rem; }
+        .rule-text p { margin: 5px 0 0 0; color: #ccc; font-size: 0.95rem; }
+
+        .warning-box {
+            background: rgba(255, 204, 0, 0.1);
+            border: 1px dashed var(--yellow);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kadro.html">Kadro</a>
+    <a href="kurallar.html" class="active">Kurallar</a>
+    <a href="basarilar.html">Başarılar</a>
+    <a href="indir.html">Dosyalar</a>
+    <a href="basvuru.html">Başvuru</a>
+</nav>
+
+<div class="container">
+    <h1>Lonca Kanunları</h1>
+
+    <div class="rule-item">
+        <div class="rule-number">01</div>
+        <div class="rule-text">
+            <h3>Saygı ve Üslup</h3>
+            <p>Lonca içerisinde veya oyun genelinde küfür, argo ve kışkırtıcı davranışlar kesinlikle yasaktır.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">02</div>
+        <div class="rule-text">
+            <h3>Aktiflik Şartı</h3>
+            <p>Tüm üyelerin haftalık belirli bir saat aktif olması ve Discord duyurularını takip etmesi zorunludur.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">03</div>
+        <div class="rule-text">
+            <h3>Klan Savaşları (CW)</h3>
+            <p>Klan savaşı çağrısı yapıldığında, mazereti olmayan her üyenin katılım sağlaması beklenir.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">04</div>
+        <div class="rule-text">
+            <h3>Hile ve Third Party</h3>
+            <p>Herhangi bir hile veya oyun dengesini bozan ek yazılım kullanımı süresiz uzaklaştırma sebebidir.</p>
+        </div>
+    </div>
+
+    <div class="warning-box">
+        <p style="color: var(--yellow); font-weight: bold; margin: 0;">
+            <i class="fas fa-exclamation-triangle"></i> Kurallara uymayan üyeler, yönetim kararıyla loncadan uzaklaştırılır.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadro | ASCENTRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card: #151515;
+            --yellow: #ffcc00;
+            --blue: #0055ff;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR (Index ile aynı olmalı) */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid var(--yellow);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: var(--blue); }
+        .active { color: var(--yellow) !important; border-bottom: 2px solid var(--yellow); }
+
+        .container { max-width: 1100px; margin: auto; padding: 20px; text-align: center; }
+        
+        h1 { color: var(--yellow); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px; }
+
+        /* KART TASARIMI */
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .player-card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            border-bottom: 3px solid transparent;
+            position: relative;
+        }
+
+        .player-card:hover {
+            transform: translateY(-10px);
+            background: #1e1e1e;
+        }
+
+        /* Rütbe Renkleri */
+        .rank-leader { border-bottom-color: var(--yellow); }
+        .rank-staff { border-bottom-color: var(--blue); }
+        .rank-member { border-bottom-color: #555; }
+
+        .player-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .leader-icon { color: var(--yellow); }
+        .staff-icon { color: var(--blue); }
+        .member-icon { color: #888; }
+
+        .player-name { font-size: 1.4rem; font-weight: bold; display: block; }
+        .player-role { font-size: 0.9rem; text-transform: uppercase; color: #aaa; margin-top: 5px; }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kadro.html" class="active">Kadro</a>
+    <a href="kurallar.html">Kurallar</a>
+    <a href="basarilar.html">Başarılar</a>
+    <a href="indir.html">Dosyalar</a>
+    <a href="basvuru.html">Başvuru</a>
+</nav>
+
+<div class="container">
+    <h1>Lonca Kadrosu</h1>
+
+    <h2 style="color: var(--blue); margin-top: 40px;">- Yönetim -</h2>
+    <div class="roster-grid">
+        <div class="player-card rank-leader">
+            <i class="fas fa-crown leader-icon"></i>
+            <span class="player-name">ASCENTRA_CEO</span>
+            <span class="player-role">Lonca Başkanı</span>
+        </div>
+
+        <div class="player-card rank-staff">
+            <i class="fas fa-shield-alt staff-icon"></i>
+            <span class="player-name">OYUNCU_ADI</span>
+            <span class="player-role">Başkan Yardımcısı</span>
+        </div>
+
+        <div class="player-card rank-staff">
+            <i class="fas fa-shield-alt staff-icon"></i>
+            <span class="player-name">OYUNCU_ADI</span>
+            <span class="player-role">Moderatör</span>
+        </div>
+    </div>
+
+    <h2 style="color: #888; margin-top: 40px;">- Seçkin Üyeler -</h2>
+    <div class="roster-grid">
+        <div class="player-card rank-member">
+            <i class="fas fa-user member-icon"></i>
+            <span class="player-name">MEMBER_1</span>
+            <span class="player-role">Veteran</span>
+        </div>
+        <div class="player-card rank-member">
+            <i class="fas fa-user member-icon"></i>
+            <span class="player-name">MEMBER_2</span>
+            <span class="player-role">Üye</span>
+        </div>
+        </div>
+</div>
+
+</body>
+</html>
